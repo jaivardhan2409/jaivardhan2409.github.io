@@ -95,3 +95,13 @@
   opacity: 0.3;
   transform: scale(1.5);
 }
+
+@media (max-width: 576px) {
+  .certGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .certCard {
+    padding: 2rem 1.5rem;
+  }
+}

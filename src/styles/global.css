@@ -144,6 +144,22 @@ img {
     display: none !important;
   }
   .section {
-    padding: 4rem 0;
+    padding: 4.5rem 0;
+  }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
   }
 }
