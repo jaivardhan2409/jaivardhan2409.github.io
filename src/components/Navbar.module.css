@@ -1,0 +1,126 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all var(--transition-normal);
+  padding: 1.5rem 0;
+  background: transparent;
+}
+
+.scrolled {
+  padding: 1rem 0;
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.8rem;
+  cursor: pointer;
+  letter-spacing: -1px;
+}
+
+.navList {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.navLink:hover {
+  color: var(--accent-primary);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-main);
+  transition: width var(--transition-normal);
+  border-radius: var(--radius-full);
+}
+
+.activeLink::after {
+  width: 100%;
+}
+
+.activeLink {
+  color: var(--accent-primary);
+}
+
+.mobileMenuBtn {
+  display: none;
+  color: var(--text-primary);
+}
+
+.mobileMenu {
+  display: none;
+}
+
+/* Mobile Setup */
+@media (max-width: 768px) {
+  .mobileMenuBtn {
+    display: block;
+    z-index: 101;
+  }
+
+  .mobileMenu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-primary);
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+  }
+
+  .mobileMenuOpen {
+    transform: translateY(0);
+  }
+
+  .mobileNavList {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .mobileNavLink {
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    transition: color var(--transition-fast);
+  }
+
+  .mobileNavLink:hover, .activeLink {
+    color: var(--accent-primary);
+  }
+}
