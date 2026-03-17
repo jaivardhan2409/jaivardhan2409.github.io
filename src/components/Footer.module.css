@@ -1,0 +1,135 @@
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: 4rem 0 2rem;
+  margin-top: 2rem;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.links {
+  display: flex;
+  gap: 4rem;
+}
+
+.linksCol h4 {
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+}
+
+.linksCol ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.linksCol li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.linksCol li:hover {
+  color: var(--accent-primary);
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.copyright {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.socials a {
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.socials a:hover {
+  color: var(--accent-primary);
+  transform: translateY(-3px);
+}
+
+.backToTop {
+  position: absolute;
+  right: 0;
+  top: -24px;
+  width: 48px;
+  height: 48px;
+  background: var(--gradient-main);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-accent);
+  transition: transform var(--transition-fast);
+}
+
+.backToTop:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column;
+  }
+  
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  
+  .backToTop {
+    top: auto;
+    bottom: 2rem;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
+  .backToTop:hover {
+    transform: translate(50%, -5px);
+  }
+}
