@@ -1,16 +1,44 @@
-# React + Vite
+# Jaivardhan Singh - Personal Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the source code of my personal developer portfolio! This project is a modern, single-page React application built to showcase my skills, projects, and professional background.
 
-Currently, two official plugins are available:
+## Features
+- **Modern UI**: Dark theme, glassmorphism, glowing gradients, and fluid typography.
+- **Responsive**: Fully optimized for mobile, tablet, and desktop viewing.
+- **Framework**: Built with **React** and **Vite** for rapid tooling and high performance.
+- **Animations**: Driven by **Framer Motion** for smooth scroll reveals and micro-interactions.
+- **Routing**: Utilizes `react-scroll` for seamless, single-page navigation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Local Development
 
-## React Compiler
+If you'd like to run a local instance of this portfolio:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/jaivardhan2409/jaivardhan2409.github.io.git
+   cd jaivardhan2409.github.io
+   ```
 
-## Expanding the ESLint configuration
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Start the dev server:**
+   ```bash
+   npm run dev
+   ```
+
+## Deployment
+
+This portfolio is configured to automatically deploy to GitHub Pages anytime a merge happens on the `main` or `portfolio-v1` branch via **GitHub Actions**.
+
+- **Workflow File:** `.github/workflows/deploy.yml`
+- The `public/CNAME` file determines the custom domain when the site is published.
+
+## Customization
+
+The design tokens (colors, fonts, gradients) map to simple CSS variables found in `src/styles/global.css`. You can easily tweak these to overhaul the portfolio's aesthetics.
+
+---
+*Powered by Google Fonts, React-Icons, and Vite.*
