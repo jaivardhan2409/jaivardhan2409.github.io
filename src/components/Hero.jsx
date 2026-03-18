@@ -42,7 +42,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            A <span className="text-gradient">Full Stack Developer</span>
+            <span className="text-gradient">Full Stack Developer</span>
           </motion.h2>
 
           <motion.p
