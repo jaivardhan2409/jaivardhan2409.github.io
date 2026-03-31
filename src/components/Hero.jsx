@@ -61,7 +61,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            <a href="/Jai_updated.pdf" target="_blank" rel="noreferrer" className={styles.btnPrimary}>
+            <a href="/Jai_updated2.pdf" target="_blank" rel="noreferrer" className={styles.btnPrimary}>
               <FiDownload className={styles.icon} />
               Download Resume
             </a>
